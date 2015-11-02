@@ -16,6 +16,16 @@ Function Get-IpNetworkAddresses
     $addresscollection
 }
 
+<#
+.Synopsis
+   Gets network information from an ipaddress/subnet
+.DESCRIPTION
+.EXAMPLE
+   Example of how to use this cmdlet
+.EXAMPLE
+   Get-IPNetworkFromIpAddress -IpAddressWithCidr "192.168.1.0/24"
+   Get-IPNetworkFromIpAddress -IpAddress "192.168.1.0" -subnetmask "255.255.255.0"
+#>
 Function Get-IPNetworkFromIpAddress
 {
     Param (
